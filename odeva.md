@@ -493,3 +493,68 @@ Excellent moyen d'apprendre !
  * Règles définies = Moins de conflits.
  * Résoudre un conflit nécessite une reflexion.
  * Si votre SCM détecte un conflit alors sans SCM il y aurait eu de la perte de code.
+
+---
+= data-x='3000' data-y='0' data-rotate='90' data-scale='3'
+
+# Git
+
+---
+= data-x='3000' data-y='-3000' data-rotate='90'
+# Centralisé
+
+![Centralisé](http://betterexplained.com/wp-content/uploads/version_control/distributed/centralized_example.png)
+
+---
+= data-x='3000' data-y='-2000' data-rotate='90'
+
+# Décentralisé / Distribué
+
+![Decentralisé](http://betterexplained.com/wp-content/uploads/version_control/distributed/distributed_example.png)
+
+---
+= data-x='3000' data-y='-1000' data-rotate='90'
+
+# Avantages DVCS
+
+ * L'historique des versions est toujours disponible
+ * Les commits sont toujours possibles (même offline)
+ * Beaucoup plus rapide
+ * Facilité de création de branches
+ * Moins de maintenance
+
+---
+= data-x='3000' data-y='0' data-rotate='90'
+
+# Plus de complexité
+
+ * La manière de collaborer n'est pas forcée par le système
+ * Impossible de savoir ou est la dernière version
+ * Besoin de cadrer l'organisation.
+ * Les numéros de version sont des GUID
+
+---
+= data-x='3000' data-y='1000' data-rotate='90'
+
+# Push / Pull
+
+![PushPull](http://betterexplained.com/wp-content/uploads/version_control/distributed/distributed_push_pull.png)
+
+---
+= data-x='3000' data-y='2000' data-rotate='90'
+
+# Github / Pull request
+
+ * Les contributeurs font des PR
+ * Le mainteneur les accepte, les refuse ou demande des modifications
+ * Notion de `rebase` pour réécrire l'histoire.
+ * Git flow
+
+Nouveau rôle : Intégrateur.
+
+---
+= data-x='3000' data-y='3000' data-rotate='90'
+
+# Les commandes GIT
+
+ [La meilleure source à mon avis](http://ndpsoftware.com/git-cheatsheet.html)
