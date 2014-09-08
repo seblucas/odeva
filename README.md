@@ -19,3 +19,7 @@ cp odeva-style.css odeva/css/style.css
 
  * [Wikipedia](http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal)
  * [A Visual Guide to Version Control](http://betterexplained.com/articles/a-visual-guide-to-version-control/)
+
+# Licence
+
+[CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
