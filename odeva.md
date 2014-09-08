@@ -370,3 +370,126 @@ svn merge -r5:6 http://path/to/branch
 ![Conflit](http://betterexplained.com/wp-content/uploads/version_control/vcs_conflict.png)
 
 Gestion manuelle la plupart du temps.
+
+
+---
+= data-x='-6000' data-y='2200' data-scale='4'
+
+# Grand pouvoirs
+
+---
+= data-x='-7000' data-y='1700'
+# Intérêts
+
+ * Avoir le droit de changer d’avis
+ * Tester des idées sans conséquence
+ * Collaborer avec d’autres personnes
+ * Faciliter la **maintenance** ou le déboggage
+
+---
+= data-x='-7000' data-y='2700'
+# Intérêts (suite)
+ * Générer des statistiques
+ * Gagner du temps
+ * Garder sa santé mentale
+
+---
+= data-x='-6000' data-y='1700'
+# Intérêts (suite)
+ * Log
+ * Blame / Annotate
+ * Bisect
+
+---
+= data-x='-6000' data-y='1700'
+# Revue de code
+
+Pas de revue de code sans gestionnaire de source.
+
+Excellent moyen d'apprendre !
+
+---
+= data-x='-4000' data-y='2200' data-scale='4'
+
+# Grandes responsabilités
+
+---
+= data-x='-5000' data-y='1700'
+# Rien de magique !
+
+ * Un SCM mal utilisé sera certainement plus pénalisant que de ne pas en utiliser.
+ * Ce n'est pas le SCM qui va permettre de gérer la communication autour du projet.
+ * Un SCM se sauvegarde !
+ * Ne jamais toucher aux fichiers internes (.svn, .git, ...)
+
+---
+= data-x='-5000' data-y='2700'
+# Fichiers à exclure
+
+## Règles fermes
+
+ * Aucun résultat de compilation (dll, jar, ...)
+ * Aucun fichier spécifique à un ordinateur (préférences, lien d'accès à une base de données, ...)
+ * Les fichiers à exclure doivent être **ignorés** (svn:ignore, .hgignore, .gitignore)
+
+---
+= data-x='-5000' data-y='2700' data-z='-9000'
+# Fichiers à exclure
+
+## Règles négociables
+
+ * Aucun executable ou limiter les fichiers binaires.
+ * Limiter les librairies externes (privilégier si possible les outils comme composer, gradle, bower, maven, ...)
+
+---
+= data-x='-4000' data-y='1700'
+# Validation (commit)
+
+## Respecter l'équipe
+
+ * Avant un commit, il faut rafraichir sa copie locale (récupérer les modifications des collaborateurs).
+ * Avant de faire un commit, les modifications doivent être testées (par le développeur et via des tests unitaires le cas échéant).
+ * Un commit doit avoir un message explicite en bon français.
+
+---
+= data-x='-4000' data-y='2700'
+## Garder la cohérence
+
+ * Un commit ne mélange pas le fond et la forme.
+ * Un commit = Un objectif.
+ * La suppression ou le renommage se font avec le SCM
+ * Les commits doivent être fréquents.
+ * Un commit doit être relu.
+ * Un commit doit se suffire à lui même.
+ * A vous ...
+
+---
+= data-x='-4000' data-y='2700' data-z='-9000'
+# TOP 10 des pires messages
+
+ * Some shit.
+ * It works!
+ * fix some fucking errors
+ * fix
+ * Fixed a little bug...
+ * Updated
+ * typo
+ * Revision 1024!!
+
+---
+= data-x='-3000' data-y='1700'
+
+# Conflits
+
+ * Ne pas se lancer la patate chaude.
+ * Etre adulte.
+ * Un conflit n'est pas à cause de l'autre.
+
+---
+= data-x='-3000' data-y='2700'
+# Règles à suivre
+
+ * Avoir des conflits est normal dans un projet.
+ * Règles définies = Moins de conflits.
+ * Résoudre un conflit nécessite une reflexion.
+ * Si votre SCM détecte un conflit alors sans SCM il y aurait eu de la perte de code.
