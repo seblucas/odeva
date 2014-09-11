@@ -285,7 +285,7 @@ svn co file:///home/user/svn/monProjet/trunk maCopieLocale
 
 ---
 = data-x='-2000' data-y='3250' data-z='-18000'
-# svnserve
+# svnserve / Apache (dav)
 
 ```bash
 vi /home/user/svn/monProjet/conf/svnserve.conf
