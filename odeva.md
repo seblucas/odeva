@@ -280,7 +280,7 @@ svn import /tmp/Projet file:///home/user/svn/monProjet -m "Import initial"
 
 ```bash
 cd /home/user/src
-svn co file:///home/user/svn/test/trunk maCopieLocale
+svn co file:///home/user/svn/monProjet/trunk maCopieLocale
 ```
 
 ---
