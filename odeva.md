@@ -558,3 +558,31 @@ Nouveau rôle : Intégrateur.
 # Les commandes GIT
 
  [La meilleure source à mon avis](http://ndpsoftware.com/git-cheatsheet.html)
+
+---
+= data-x='3000' data-y='4000' data-rotate='90'
+# TP / Basique
+
+```bash
+cd /home/user/src
+git init testGit
+git clone testGit testGitLocal
+cd testGitLocal/
+touch a.txt && git add a.txt
+git commit -m "Add a"
+```
+
+---
+= data-x='3000' data-y='5000' data-rotate='90'
+# TP / Branches
+
+```bash
+git checkout -b modif
+git branch
+touch b.txt && git add b.txt
+git commit -m "Ajout de b.txt"
+git checkout master
+touch c.txt && git add c.txt
+git commit -m "Ajout de C.txt"
+git merge modif
+```
