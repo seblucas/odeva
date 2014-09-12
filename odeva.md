@@ -409,6 +409,12 @@ Pas de revue de code sans gestionnaire de source.
 Excellent moyen d'apprendre !
 
 ---
+= data-x='-6000' data-y='2700'
+# Outils graphiques
+
+TortoiseSVN, TortoiseHG, Github, Bitbucket
+
+---
 = data-x='-4000' data-y='2200' data-scale='4'
 
 # Grandes responsabilités
