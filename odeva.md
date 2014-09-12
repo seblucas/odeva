@@ -465,7 +465,7 @@ Excellent moyen d'apprendre !
 
 ---
 = data-x='-4000' data-y='2700' data-z='-9000'
-# TOP 10 des pires messages
+# TOP 8 des pires messages
 
  * Some shit.
  * It works!
