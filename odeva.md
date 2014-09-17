@@ -592,3 +592,14 @@ touch c.txt && git add c.txt
 git commit -m "Ajout de C.txt"
 git merge modif
 ```
+
+---
+= data-x='3000' data-y='6000' data-rotate='90'
+# TP / Push
+
+```bash
+cd ../testGit
+git config --bool core.bare true
+cd ../testGitLocal
+git push origin master
+```
