@@ -401,7 +401,7 @@ Gestion manuelle la plupart du temps.
  * Bisect
 
 ---
-= data-x='-6000' data-y='1700'
+= data-x='-6000' data-y='1700' data-z='-9000'
 # Revue de code
 
 Pas de revue de code sans gestionnaire de source.
