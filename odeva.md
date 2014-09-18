@@ -565,6 +565,8 @@ Nouveau rôle : Intégrateur.
 
  [La meilleure source à mon avis](http://ndpsoftware.com/git-cheatsheet.html)
 
+Proxy : [Trac ODEVA](http://forge.fil.univ-lille1.fr/eODEVA/wiki/ReglageProxySCV)
+
 ---
 = data-x='3000' data-y='4000' data-rotate='90'
 # TP / Basique
