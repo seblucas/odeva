@@ -577,7 +577,7 @@ git init testGit
 git clone testGit testGitLocal
 cd testGitLocal/
 touch a.txt && git add a.txt
-git commit -m "Add a"
+git commit -am "Add a"
 ```
 
 ---
@@ -588,10 +588,10 @@ git commit -m "Add a"
 git checkout -b modif
 git branch
 touch b.txt && git add b.txt
-git commit -m "Ajout de b.txt"
+git commit -am "Ajout de b.txt"
 git checkout master
 touch c.txt && git add c.txt
-git commit -m "Ajout de C.txt"
+git commit -am "Ajout de C.txt"
 git merge modif
 ```
 
