@@ -605,3 +605,32 @@ git config --bool core.bare true
 cd ../testGitLocal
 git push origin master
 ```
+
+---
+= data-x='3000' data-y='7000' data-rotate='90'
+# TP / .gitignore
+
+[gitignore.io](https://www.gitignore.io)
+
+```bash
+cd ../testGitLocal
+vi .gitignore
+git add .gitignore
+git commit -am "Ajout de la liste des ignorés"
+```
+
+---
+= data-x='3000' data-y='8000' data-rotate='90'
+# TP / pull rebase
+
+```bash
+cd /home/user/src
+git clone testGit testGitDeux
+touch z.txt && git add z.txt
+git commit -am "Add z"
+git push origin master
+cd ../testGitLocal
+touch y.txt && git add y.txt
+git commit -am "Add y"
+git pull --rebase
+```
