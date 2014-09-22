@@ -626,6 +626,7 @@ git commit -am "Ajout de la liste des ignorés"
 ```bash
 cd /home/user/src
 git clone testGit testGitDeux
+cd testGitDeux
 touch z.txt && git add z.txt
 git commit -am "Add z"
 git push origin master
