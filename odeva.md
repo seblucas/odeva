@@ -10,6 +10,12 @@ title: ODEVA
 **O**utils supportant le **DEV**eloppement, le déploiement et la maintenance collaborative des **A**pplications
 
 ---
+= data-x='-4000' data-scale='4'
+# Collaborer
+
+[https://github.com/seblucas/odeva](https://github.com/seblucas/odeva)
+
+---
 = data-x='-1000' data-y='-3000' data-scale='4'
 # Projet
 
@@ -281,6 +287,7 @@ svn import /tmp/Projet file:///home/user/svn/monProjet -m "Import initial"
 ```bash
 cd /home/user/src
 svn co file:///home/user/svn/monProjet/trunk maCopieLocale
+cd maCopieLocale
 ```
 
 ---
