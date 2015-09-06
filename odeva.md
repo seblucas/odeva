@@ -382,7 +382,7 @@ Gestion manuelle la plupart du temps.
 ---
 = data-x='-6000' data-y='2200' data-scale='4'
 
-# Grand pouvoirs
+# Grands pouvoirs
 
 ---
 = data-x='-7000' data-y='1700'
