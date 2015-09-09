@@ -311,6 +311,7 @@ svn co svn://ip:45001/monProjet/trunk distance
 ![Add](http://betterexplained.com/wp-content/uploads/version_control/basic_checkin.png)
 
 ```bash
+touch list.txt
 svn add list.txt
 (Modifier le fichier)
 svn status
