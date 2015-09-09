@@ -420,7 +420,7 @@ Excellent moyen d'apprendre !
 = data-x='-6000' data-y='2700'
 # Outils graphiques
 
-TortoiseSVN, TortoiseHG, Github, Bitbucket
+[TortoiseSVN](http://tortoisesvn.net/), [TortoiseHG](http://tortoisehg.bitbucket.org/), [Github](https://github.com/), [Bitbucket](https://bitbucket.org/), [SourceTree](https://www.sourcetreeapp.com/), [Github Desktop](https://desktop.github.com/), ...
 
 ---
 = data-x='-4000' data-y='2200' data-scale='4'
