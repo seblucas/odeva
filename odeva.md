@@ -506,7 +506,7 @@ Excellent moyen d'apprendre !
  * Avoir des conflits est normal dans un projet.
  * Règles définies = Moins de conflits.
  * Résoudre un conflit nécessite une reflexion.
- * Si votre SCM détecte un conflit alors sans SCM il y aurait eu de la perte de code.
+ * Si votre SCM détecte un conflit, alors sans SCM, il y aurait eu de la perte de code.
 
 ---
 = data-x='3000' data-y='0' data-rotate='90' data-scale='3'
@@ -543,7 +543,7 @@ Excellent moyen d'apprendre !
 # Plus de complexité
 
  * La manière de collaborer n'est pas forcée par le système
- * Impossible de savoir ou est la dernière version
+ * Impossible de savoir où est la dernière version
  * Besoin de cadrer l'organisation.
  * Les numéros de version sont des GUID
 
