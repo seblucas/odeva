@@ -622,7 +622,7 @@ git push origin master
 
 ```bash
 cd ../testGitLocal
-vi .gitignore
+nano .gitignore
 git add .gitignore
 git commit -am "Ajout de la liste des ignorés"
 ```
