@@ -585,7 +585,7 @@ git init testGit
 git clone testGit testGitLocal
 cd testGitLocal/
 touch a.txt && git add a.txt
-git commit -am "Add a"
+git commit -am "Ajout de a.txt"
 ```
 
 ---
