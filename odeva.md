@@ -585,7 +585,7 @@ git init testGit
 git clone testGit testGitLocal
 cd testGitLocal/
 touch a.txt && git add a.txt
-git commit -am "Add a"
+git commit -am "Ajout de a.txt"
 ```
 
 ---
@@ -622,7 +622,7 @@ git push origin master
 
 ```bash
 cd ../testGitLocal
-vi .gitignore
+nano .gitignore
 git add .gitignore
 git commit -am "Ajout de la liste des ignorés"
 ```
