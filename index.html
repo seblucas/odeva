@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown="odeva.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+            </div>
+        </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/reveal.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/theme/white.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/agate.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/js/head.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/js/reveal.min.js"></script>
+        <script>
+            Reveal.initialize({
+                dependencies: [
+                    // Interpret Markdown in <section> elements
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/markdown/marked.min.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/markdown/markdown.min.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                    // Syntax highlight for <code> elements
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
