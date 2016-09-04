@@ -448,6 +448,12 @@ Excellent moyen d'apprendre !
 
 
 
+# Le meilleur du pire
+
+[Critiquez](https://github.com/seblucas/BadPractice)
+
+
+
 # Git
 
 
