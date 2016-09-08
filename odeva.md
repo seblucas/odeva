@@ -410,6 +410,15 @@ Proxy : [Trac ODEVA](http://forge.fil.univ-lille1.fr/eODEVA/wiki/ReglageProxySCV
 # Git / Basique
 
 
+# TP / Commandes à connaitre
+
+```bash
+git log
+git diff (--cached)
+git status
+```
+
+
 # TP / Basique
 
 ```bash
@@ -442,6 +451,7 @@ git merge modif
 cd ../testGit
 git config --bool core.bare true
 cd ../testGitLocal
+git remote -v
 git push origin master
 ```
 
@@ -455,6 +465,7 @@ cd ../testGitLocal
 nano .gitignore
 git add .gitignore
 git commit -am "Ajout de la liste des ignorés"
+git push origin master
 ```
 
 
@@ -471,8 +482,23 @@ cd ../testGitLocal
 touch y.txt && git add y.txt
 git commit -am "Add y"
 git pull --rebase
+git push origin master
 ```
 
+
+# TP / Conflits
+
+```bash
+cd ../testGitDeux
+echo "Modification A" >> a.txt
+git commit -am "Modification a.txt"
+git push origin master
+cd ../testGitLocal
+echo "Modification B" >> a.txt
+git commit -am "Modification a.txt"
+git pull --rebase
+git push origin master
+```
 
 
 # Grands pouvoirs
