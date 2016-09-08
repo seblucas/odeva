@@ -34,6 +34,20 @@ L'art de travailler ensemble.
  * Qualité
 
 
+# La réalité
+
+> "Un chef de projet est la seule personne au monde à croire que 9 femmes peuvent faire 1 bébé en 1 mois"
+> 
+> "7 projets informatiques sur 10 ne réussissent pas dans les temps ou pire encore jamais" Codendi
+
+
+# Besoin de certitude
+
+Une projet se reussit en agissant sur les faits et en travaillant en vérité avec le client, sa hiérarchie et ses collaborateurs.
+
+[C'est presque fini](http://geekandpoke.typepad.com/geekandpoke/2012/10/doad.html)
+
+
 
 # Besoin d'outils
 
@@ -339,6 +353,128 @@ Gestion manuelle la plupart du temps.
 
 
 
+# Git
+
+
+# Centralisé
+
+![Centralisé](http://betterexplained.com/wp-content/uploads/version_control/distributed/centralized_example.png)
+
+
+# Décentralisé / Distribué
+
+![Decentralisé](http://betterexplained.com/wp-content/uploads/version_control/distributed/distributed_example.png)
+
+
+# Avantages DVCS
+
+ * L'historique des versions est toujours disponible
+ * Les commits sont toujours possibles (même offline)
+ * Beaucoup plus rapide
+ * Facilité de création de branches
+ * Moins de maintenance
+
+
+# Plus de complexité
+
+ * La manière de collaborer n'est pas forcée par le système
+ * Impossible de savoir où est la dernière version
+ * Besoin de cadrer l'organisation.
+ * Les numéros de version sont des GUID
+
+
+# Push / Pull
+
+![PushPull](http://betterexplained.com/wp-content/uploads/version_control/distributed/distributed_push_pull.png)
+
+
+# Github / Pull request
+
+ * Les contributeurs font des PR
+ * Le mainteneur les accepte, les refuse ou demande des modifications
+ * Notion de `rebase` pour réécrire l'histoire.
+ * Git flow
+
+Nouveau rôle : Intégrateur.
+
+
+
+# Les commandes GIT
+
+ [La meilleure source à mon avis](http://ndpsoftware.com/git-cheatsheet.html)
+
+Proxy : [Trac ODEVA](http://forge.fil.univ-lille1.fr/eODEVA/wiki/ReglageProxySCV)
+
+
+
+# Git / Basique
+
+
+# TP / Basique
+
+```bash
+cd /home/user/src
+git init testGit
+git clone testGit testGitLocal
+cd testGitLocal/
+touch a.txt && git add a.txt
+git commit -am "Ajout de a.txt"
+```
+
+
+# TP / Branches
+
+```bash
+git checkout -b modif
+git branch
+touch b.txt && git add b.txt
+git commit -am "Ajout de b.txt"
+git checkout master
+touch c.txt && git add c.txt
+git commit -am "Ajout de C.txt"
+git merge modif
+```
+
+
+# TP / Push
+
+```bash
+cd ../testGit
+git config --bool core.bare true
+cd ../testGitLocal
+git push origin master
+```
+
+
+# TP / .gitignore
+
+[gitignore.io](https://www.gitignore.io)
+
+```bash
+cd ../testGitLocal
+nano .gitignore
+git add .gitignore
+git commit -am "Ajout de la liste des ignorés"
+```
+
+
+# TP / pull rebase
+
+```bash
+cd /home/user/src
+git clone testGit testGitDeux
+cd testGitDeux
+touch z.txt && git add z.txt
+git commit -am "Add z"
+git push origin master
+cd ../testGitLocal
+touch y.txt && git add y.txt
+git commit -am "Add y"
+git pull --rebase
+```
+
+
+
 # Grands pouvoirs
 
 
@@ -454,119 +590,13 @@ Excellent moyen d'apprendre !
 
 
 
-# Git
+# Git / Avancé
 
 
-# Centralisé
+# TP / Rebase
 
-![Centralisé](http://betterexplained.com/wp-content/uploads/version_control/distributed/centralized_example.png)
-
-
-# Décentralisé / Distribué
-
-![Decentralisé](http://betterexplained.com/wp-content/uploads/version_control/distributed/distributed_example.png)
-
-
-# Avantages DVCS
-
- * L'historique des versions est toujours disponible
- * Les commits sont toujours possibles (même offline)
- * Beaucoup plus rapide
- * Facilité de création de branches
- * Moins de maintenance
-
-
-# Plus de complexité
-
- * La manière de collaborer n'est pas forcée par le système
- * Impossible de savoir où est la dernière version
- * Besoin de cadrer l'organisation.
- * Les numéros de version sont des GUID
-
-
-# Push / Pull
-
-![PushPull](http://betterexplained.com/wp-content/uploads/version_control/distributed/distributed_push_pull.png)
-
-
-# Github / Pull request
-
- * Les contributeurs font des PR
- * Le mainteneur les accepte, les refuse ou demande des modifications
- * Notion de `rebase` pour réécrire l'histoire.
- * Git flow
-
-Nouveau rôle : Intégrateur.
+# TP / stash
 
 
 
-# Les commandes GIT
-
- [La meilleure source à mon avis](http://ndpsoftware.com/git-cheatsheet.html)
-
-Proxy : [Trac ODEVA](http://forge.fil.univ-lille1.fr/eODEVA/wiki/ReglageProxySCV)
-
-
-
-# TP / Basique
-
-```bash
-cd /home/user/src
-git init testGit
-git clone testGit testGitLocal
-cd testGitLocal/
-touch a.txt && git add a.txt
-git commit -am "Ajout de a.txt"
-```
-
-
-# TP / Branches
-
-```bash
-git checkout -b modif
-git branch
-touch b.txt && git add b.txt
-git commit -am "Ajout de b.txt"
-git checkout master
-touch c.txt && git add c.txt
-git commit -am "Ajout de C.txt"
-git merge modif
-```
-
-
-# TP / Push
-
-```bash
-cd ../testGit
-git config --bool core.bare true
-cd ../testGitLocal
-git push origin master
-```
-
-
-# TP / .gitignore
-
-[gitignore.io](https://www.gitignore.io)
-
-```bash
-cd ../testGitLocal
-nano .gitignore
-git add .gitignore
-git commit -am "Ajout de la liste des ignorés"
-```
-
-
-# TP / pull rebase
-
-```bash
-cd /home/user/src
-git clone testGit testGitDeux
-cd testGitDeux
-touch z.txt && git add z.txt
-git commit -am "Add z"
-git push origin master
-cd ../testGitLocal
-touch y.txt && git add y.txt
-git commit -am "Add y"
-git pull --rebase
-```
+# Travis
