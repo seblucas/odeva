@@ -482,7 +482,7 @@ git push origin master
 cd ../testGitLocal
 touch y.txt && git add y.txt
 git commit -am "Add y"
-git pull --rebase
+git pull --rebase origin master
 git push origin master
 ```
 
