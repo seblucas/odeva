@@ -618,6 +618,57 @@ Excellent moyen d'apprendre !
 
 
 
+# Travis
+
+
+# Création fichier basique
+
+Créer un fichier `.travis.yml` à la racine du projet
+
+```yaml
+language: java
+```
+
+[Dans certains cas cela peut suffire](https://docs.travis-ci.com/user/languages/java/)
+
+
+# Lien entre Github / Travis
+
+ * Se connecter avec son compte Github à [Travis](https://travis-ci.org/)
+ * Activer le dépôt concerné
+ * Faire un commit
+
+
+# Un fichier plus complet
+
+```yaml
+language: node_js
+
+matrix:
+  include:
+    - node_js: "5"
+    - node_js: "4.2"
+
+before_install:
+  - npm install -g bower
+  - bower install
+
+script:
+  - gulp ci
+  - 'if [ "${TRAVIS_NODE_VERSION}" = "4.2" ]; then gulp protractor ; fi'
+```
+
+
+# Autres outils intégrés
+
+ * Selenium / Appium : [Saucelabs](https://saucelabs.com/), [Browserstack](https://www.browserstack.com/), ...
+ * Analyse statique de code : [Codeclimate](https://codeclimate.com), [Scrutinizer](https://scrutinizer-ci.com/), ...
+ * Couverture de code : [Coveralls](https://coveralls.io/), la liste précédente
+ * Vérification de dépendences : [Versioneye](https://www.versioneye.com/), [David](https://david-dm.org/), [Greenkeeper](https://greenkeeper.io/), ...
+ * Déploiement : AWS, Azure, Heroku, Play Store, ...
+
+
+
 # Git / Avancé
 
 
@@ -626,5 +677,3 @@ Excellent moyen d'apprendre !
 # TP / stash
 
 
-
-# Travis
