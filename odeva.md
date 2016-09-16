@@ -416,6 +416,7 @@ Proxy : [Trac ODEVA](http://forge.fil.univ-lille1.fr/eODEVA/wiki/ReglageProxySCV
 git log
 git diff (--cached)
 git status
+git config --global core.editor nano
 ```
 
 
@@ -501,6 +502,7 @@ git push origin master
 ```
 
 
+
 # Grands pouvoirs
 
 
@@ -533,7 +535,7 @@ Excellent moyen d'apprendre !
 
 # Outils graphiques
 
-[TortoiseSVN](http://tortoisesvn.net/), [TortoiseHG](http://tortoisehg.bitbucket.org/), [Github](https://github.com/), [Bitbucket](https://bitbucket.org/), [SourceTree](https://www.sourcetreeapp.com/), [Github Desktop](https://desktop.github.com/), ...
+[TortoiseSVN](http://tortoisesvn.net/), [TortoiseHG](http://tortoisehg.bitbucket.org/), [Github](https://github.com/), [Bitbucket](https://bitbucket.org/), [SourceTree](https://www.sourcetreeapp.com/), [Github Desktop](https://desktop.github.com/), [GitKraken](https://www.gitkraken.com/), ...
 
 
 
