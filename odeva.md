@@ -659,6 +659,9 @@ script:
 ```
 
 
+# Exercice 
+
+
 # Autres outils intégrés
 
  * Selenium / Appium : [Saucelabs](https://saucelabs.com/), [Browserstack](https://www.browserstack.com/), ...
@@ -673,8 +676,54 @@ script:
 # Git / Avancé
 
 
-# TP / Rebase
+# Commandes utiles
 
-# TP / stash
+```bash
+git checkout -f # Annule toutes les modifications
+git reset --hard # Supprime aussi les nouveaux fichiers non suivis
 
 
+```
+
+
+# Compléter un commit
+
+```bash
+git commit --amend
+```
+
+
+# TP / Rebase (1/2)
+
+```bash
+git checkout -b new-feature
+# Faites plusieurs modifications et plusieurs commits
+git commit -a -m "Début"
+git commit -a -m "Modification du précédent"
+
+git checkout master
+# 1 commit sur la master
+git commit -a -m "Fix security hole"
+
+git checkout new-feature
+git rebase -i master
+```
+
+
+# TP / Rebase (2/2)
+
+ * pick
+ * squash
+ * renommage de message
+ * suppression
+
+Notion de cherry picking et commit squashing.
+
+
+# TP / stash (2/2)
+
+```bash
+git stash save -u "Sauvegarde des modification y compris les ajouts"
+git stash clear # Attention irrémédiable
+git branch <branchname> <stashname>
+```
