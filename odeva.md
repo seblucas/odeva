@@ -681,8 +681,6 @@ script:
 ```bash
 git checkout -f # Annule toutes les modifications
 git reset --hard # Supprime aussi les nouveaux fichiers non suivis
-
-
 ```
 
 
@@ -703,7 +701,7 @@ git commit -a -m "Modification du précédent"
 
 git checkout master
 # 1 commit sur la master
-git commit -a -m "Fix security hole"
+git commit -a -m "Correction pb sécurité"
 
 git checkout new-feature
 git rebase -i master
@@ -712,18 +710,37 @@ git rebase -i master
 
 # TP / Rebase (2/2)
 
- * pick
- * squash
- * renommage de message
+ * pick : conserver un commit
+ * squash/fixup : fusionner deux commits
+ * edit : découper un commit
+ * reword : renommage de message
  * suppression
+ * réordonner
 
 Notion de cherry picking et commit squashing.
+
+
+# TP / Rebase Attention
+
+Ne jamais utiliser le `rebase` sur des commits qui ne sont pas strictement locaux.
+
+
+# TP / stash (1/2)
+
+```bash
+nano b.txt # Faire des changements
+git stash save "Sauvegarde des modifications sur b.txt"
+git stash list
+git stash show -p stash@{0}
+git stash pop
+git stash list && git status
+```
 
 
 # TP / stash (2/2)
 
 ```bash
-git stash save -u "Sauvegarde des modification y compris les ajouts"
+git stash save -u "Sauvegarde des modifications y compris les ajouts"
 git stash clear # Attention irrémédiable
 git branch <branchname> <stashname>
 ```
