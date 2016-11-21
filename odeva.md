@@ -760,7 +760,7 @@ git stash list && git status
 ```bash
 git stash save -u "Sauvegarde des modifications y compris les ajouts"
 git stash clear # Attention irrémédiable
-git branch <branchname> <stashname>
+git stash branch <branchname> <stashname>
 ```
 
 
