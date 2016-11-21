@@ -659,7 +659,20 @@ script:
 ```
 
 
-# Exercice 
+# Des fichiers encore plus complets
+
+ * https://github.com/seblucas/sqlite-enhanced-icu/blob/master/.travis.yml
+ * https://github.com/seblucas/firebase-sensor/blob/master/.travis.yml
+ * https://github.com/seblucas/cops-html-ui/blob/master/.travis.yml
+ * https://github.com/seblucas/cops/blob/master/.travis.yml
+
+
+# Exercice
+
+ * Reprendre un projet passé (Web si possible)
+ * Créer un projet Github, l'importer
+ * Le lier à Travis
+ * utiliser les outils de lint (csslint, jslint, bootlint)
 
 
 # Autres outils intégrés
@@ -679,16 +692,21 @@ script:
 # Commandes utiles
 
 ```bash
+git rm --cached <fichier> # annule un add
 git checkout -f # Annule toutes les modifications
 git reset --hard # Supprime aussi les nouveaux fichiers non suivis
+git add -i / -p # commit que d'une partie d'un fichier
+git diff --ignore-all-space
 ```
 
 
 # Compléter un commit
 
 ```bash
-git commit --amend
+git commit --amend (--no-edit)
 ```
+
+Permet d'écraser le message mais aussi d'ajouter un fichier manquant. Attention ne le faire que si aucun push n'a été fait.
 
 
 # TP / Rebase (1/2)
@@ -744,3 +762,9 @@ git stash save -u "Sauvegarde des modifications y compris les ajouts"
 git stash clear # Attention irrémédiable
 git branch <branchname> <stashname>
 ```
+
+
+
+# Adapter son prompt
+
+[Ca se passe ici](http://www.git-attitude.fr/2013/05/22/prompt-git-qui-dechire/)
