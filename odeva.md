@@ -68,16 +68,16 @@ Une projet se reussit en agissant sur les faits et en travaillant en vérité av
 
 # Intégration continue
  * Jenkins, Teamcity, Bamboo, Travis, ...
- * Compilation automatique
+ * Compilation automatique et immutable
  * Test unitaires
  * Test d'intégration
  * Génération artefacts
 
 
 # Déploiement auto
- * Cela devient une réalité
+ * C'est une réalité
  * Déploiement simplifié.
- * Github, Facebook, Google
+ * Github, Facebook, Google, Amazon
 
 
 
