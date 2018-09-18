@@ -398,6 +398,23 @@ Gestion manuelle la plupart du temps.
 Nouveau rôle : Intégrateur.
 
 
+# Github simple
+
+ * Une seule personne partage son dépôt
+ * [Ajouter un utilisateur à un dépôt](https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/)
+
+
+# Github Workflow
+
+![Github Workflow](images/GithubWorkflow.png)
+
+
+# Github Workflow - Remote
+
+ * [Ajout des remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+ * [Créer un PR](https://help.github.com/articles/creating-a-pull-request/)
+
+
 
 # Les commandes GIT
 
@@ -499,6 +516,13 @@ echo "Modification B" >> a.txt
 git commit -am "Modification a.txt"
 git pull --rebase origin master
 git push origin master
+```
+
+
+# Tracking des branches
+
+```bash
+git push -u origin mabranche
 ```
 
 
