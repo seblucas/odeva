@@ -497,7 +497,7 @@ git push origin master
 cd ../testGitLocal
 echo "Modification B" >> a.txt
 git commit -am "Modification a.txt"
-git pull --rebase
+git pull --rebase origin master
 git push origin master
 ```
 
