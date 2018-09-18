@@ -102,7 +102,7 @@ Une projet se reussit en agissant sur les faits et en travaillant en vérité av
  * Git: 2005, Linus Torvalds
 
 
-# 2016
+# 2018
 
 Toutes les sociétés n’utilisent pas encore de SCM !
 
