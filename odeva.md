@@ -596,6 +596,13 @@ Excellent moyen d'apprendre !
  * Revision 1024!!
 
 
+# La question Pourquoi ?
+
+ * [Semantic commit messages](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
+ * Prévoir la recherche future
+ * Regarder les commits du noyau Linux
+
+
 # Conflits
 
  * Ne pas se lancer la patate chaude.
