@@ -670,6 +670,15 @@ language: java
  * Faire un commit
 
 
+# TP / Recapitulatif
+
+ * Créer le dépôt Github
+ * Ajouter les sources à la racine (pom.xml à la racine)
+ * Activer le dépôt dans Travis
+ * Créer et pousser le `.travis.yml`
+ * Attendre le "vert"
+
+
 # Un fichier plus complet
 
 ```yaml
