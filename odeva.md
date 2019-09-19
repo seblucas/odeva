@@ -679,6 +679,16 @@ language: java
  * Attendre le "vert"
 
 
+# TP / plusieurs version Java
+
+```yaml
+language: java
+jdk:
+  - openjdk8
+  - openjdk9
+```
+
+
 # Un fichier plus complet
 
 ```yaml
@@ -707,9 +717,9 @@ script:
  * https://github.com/seblucas/cops/blob/master/.travis.yml
 
 
-# Exercice
+# TP / Web
 
- * Reprendre un projet passé (Web si possible)
+ * Reprendre un projet passé (Web)
  * Créer un projet Github, l'importer
  * Le lier à Travis
  * utiliser les outils de lint (csslint, jslint, bootlint)
@@ -787,7 +797,7 @@ Ne jamais utiliser le `rebase` sur des commits qui ne sont pas strictement locau
 
 ```bash
 nano b.txt # Faire des changements
-git stash save "Sauvegarde des modifications sur b.txt"
+git stash push -m "Sauvegarde des modifications sur b.txt"
 git stash list
 git stash show -p stash@{0}
 git stash pop
