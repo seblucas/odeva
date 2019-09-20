@@ -140,7 +140,7 @@ Toutes les sociétés n’utilisent pas encore de SCM !
  * Phrases à bannir !
 
 
-# Worflow
+# Workflow
 
 ![Trac Workflow](images/TracWorkflow.png)
 
