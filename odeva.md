@@ -735,6 +735,27 @@ script:
  * Déploiement : AWS, Azure, Heroku, Play Store, ...
 
 
+# TP / Intégration SonarQube
+
+ * Créer ou reprendre un dépôt Github avec un projet Java
+ * Suivre la [doc](https://docs.travis-ci.com/user/sonarcloud/) pour intégrer SonarQube
+ * Comparez les résultats entre vous
+
+
+# TP / Exemple sonar-project.properties
+
+```
+sonar.projectKey=XXX
+sonar.projectName=Test
+sonar.projectVersion=1.0-SNAPSHOT
+
+# SQ standard properties
+sonar.sources=src/
+sonar.language=java
+sonar.java.binaries=output/  
+```
+
+
 
 # Git / Avancé
 
@@ -808,7 +829,7 @@ git stash list && git status
 # TP / stash (2/2)
 
 ```bash
-git stash save -u "Sauvegarde des modifications y compris les ajouts"
+git stash push -u -m "Sauvegarde des modifications y compris les ajouts"
 git stash clear # Attention irrémédiable
 git stash branch <branchname> <stashname>
 ```
