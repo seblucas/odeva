@@ -413,6 +413,7 @@ Nouveau rôle : Intégrateur.
 
  * [Ajout des remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
  * [Créer un PR](https://help.github.com/articles/creating-a-pull-request/)
+ * [Contribuer à un projet : fork, clone, PR](https://github.com/firstcontributions/first-contributions)
 
 
 
