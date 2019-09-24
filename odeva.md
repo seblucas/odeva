@@ -839,3 +839,50 @@ git stash branch <branchname> <stashname>
 # Adapter son prompt
 
 [Ca se passe ici](http://www.git-attitude.fr/2013/05/22/prompt-git-qui-dechire/)
+
+
+
+# Bilan
+
+ * Soyez fainéant
+   * Ne faites que ce qui est nécessaire
+   * Soustraitez le maximum aux machines
+ * Automatisez
+ * Communiquez
+
+
+# Début de projet
+
+ * Créer le dépôt Git
+ * Définir les règles
+ * Créer l'intégration continue (et vérifier les règles)
+ * Créer la livraison continue
+ * Ecrire les tickets (avec priorités)
+ * Valider l'architecture
+ * Commencer le code
+
+
+# 1 mois après
+
+ * Mettre à jour les tickets
+ * Revue de code
+ * Formation interne éventuellement
+ * Remettre à jour les règles
+ * Modifier l'intégration continue
+ * Valider que la livraison continue est fiable
+
+
+# 1 semaine avant fin projet
+
+ * Mettre à jour les tickets
+ * Faire des choix
+ * Tester, Tester, Tester
+ * Valider que la livraison continue est fiable
+
+
+# Après la livraison
+
+ * Faire un bilan / rétrospective
+   * A supprimer
+   * A améliorer
+   * A conserver
