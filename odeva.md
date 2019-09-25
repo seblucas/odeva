@@ -416,6 +416,24 @@ Nouveau rôle : Intégrateur.
  * [Contribuer à un projet : fork, clone, PR](https://github.com/firstcontributions/first-contributions)
 
 
+# Gitflow
+
+![image](https://datasift.github.io/gitflow/GitFlowHotfixBranch.png)
+
+
+# Microsoft Flow
+
+![image](https://docs.microsoft.com/en-us/azure/devops/learn/_img/branch-strategy.png)
+
+
+# Your Flow
+
+ * A vous
+ * Peu de mauvaises solutions
+ * Besoin d'expliquer le fonctionnement
+ * Gestion des bugfixes claire
+
+
 
 # Les commandes GIT
 
@@ -808,6 +826,17 @@ git rebase -i master
  * réordonner
 
 Notion de cherry picking et commit squashing.
+
+
+# TP / Squash
+
+```bash
+git log
+git log --graph --decorate --pretty=oneline --abbrev-commit
+git rebase -i HEAD~[NUMBER OF COMMITS]
+ou
+git rebase -i [SHA]
+```
 
 
 # TP / Rebase Attention
