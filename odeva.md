@@ -916,3 +916,117 @@ git stash branch <branchname> <stashname>
    * A supprimer
    * A améliorer
    * A conserver
+
+
+
+# Bonus // Docker
+
+
+# Installation VM
+
+ * Lancer Virtualbox
+ * Récupérez l'image disque  : [ici](https://github.com/seblucas/odeva/releases/tag/1.0.0)
+ * La dezipper
+ * Créer une VM de type Linux / Ubuntu 64bits
+ * Ne pas créer de nouveau disque mais pointer sur le disque téléchargé
+
+
+# Installlation sur Ubuntu 20.04
+
+```bash
+sudo apt install docker.io
+sudo systemctl enable --now docker
+sudo usermod -aG docker SOMEUSERNAME
+```
+
+
+# Principes
+
+ * Docker == conteneur != machine virtuelle
+ * Moins sécurisé (partage le noyau)
+ * Plus léger 
+
+
+# Registry : Docker hub
+
+ * Source de vos images de base
+ * ubuntu / alpine / etc
+ * `docker run --rm hello-world`
+
+
+# TP / Arriere plan
+
+```bash
+docker run -d -p 8080:80 nginx
+# -d : detached // arrière plan
+# -p : transfert de port
+wget http://localhost:8080 
+```
+
+
+# TP / Rentrer dans un conteneur
+
+```bash
+docker ps -a # liste les conteneurs
+docker exec -it ID_RETOURNÉ_LORS_DU_PS bash
+wget http://localhost:80 # dans le conteneur
+## CTRL + D pour sortir ##
+```
+
+
+# TP / Stopper supprimer
+
+```bash
+docker ps -a # liste les conteneurs
+docker stop ID_RETOURNÉ_LORS_DU_PS
+docker rm ID_RETOURNÉ_LORS_DU_PS
+```
+
+
+# TP / Dockerfile
+
+```
+FROM alpine:3.12
+
+RUN apk --no-cache --update add python3 && \
+    rm -rf /tmp/* /var/tmp/* /var/cache/apk/*
+
+WORKDIR /app
+
+COPY hello.py .
+
+CMD ["python3", "hello.py"]
+```
+
+
+# TP / Dockerfile - hello.py
+
+```
+print("Hello, World!")
+```
+
+
+# TP / Dockerfile - build
+
+```bash
+docker build -t testmaster:latest .
+docker run -it --rm testmaster:latest
+```
+
+
+# TP / Structure en couche / layer
+
+```bash
+echo -e "\nprint(\"Very new world\")" >> hello.py
+docker build . -t testmaster:latest
+# Seules les couches modifiées sont reconstruites
+docker run -it --rm testmaster:latest
+```
+
+
+# Suite
+
+ * docker-compose
+ * push / pull
+ * Lien avec VS Code pour développer dans un conteneur
+ * Kubernetes
