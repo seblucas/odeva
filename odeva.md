@@ -10,6 +10,17 @@
 
 
 
+# Livrables
+
+ * Un accès au projet Platine sur Gitlab
+ * Document court (1 page) :
+   * Répartition des tâches
+   * Statégie sur la CI / CD
+   * Les problèmes rencontrés
+   * Les solutions apportées
+
+
+
 # Projet
 
 L'art de travailler ensemble.
@@ -78,6 +89,7 @@ Une projet se reussit en agissant sur les faits et en travaillant en vérité av
  * C'est une réalité
  * Déploiement simplifié.
  * Github, Facebook, Google, Amazon
+ * Même des PME de 12 personnes
 
 
 
@@ -102,7 +114,7 @@ Une projet se reussit en agissant sur les faits et en travaillant en vérité av
  * Git: 2005, Linus Torvalds
 
 
-# 2018
+# 2020
 
 Toutes les sociétés n’utilisent pas encore de SCM !
 
@@ -439,8 +451,6 @@ Nouveau rôle : Intégrateur.
 
  [La meilleure source à mon avis](http://ndpsoftware.com/git-cheatsheet.html)
 
-Proxy : [Trac ODEVA](http://forge.fil.univ-lille1.fr/eODEVA/wiki/ReglageProxySCV)
-
 
 
 # Git / Basique
@@ -746,10 +756,10 @@ script:
 
 # Autres outils intégrés
 
- * Selenium / Appium : [Saucelabs](https://saucelabs.com/), [Browserstack](https://www.browserstack.com/), ...
+ * Selenium / Appium : [Saucelabs](https://saucelabs.com/), [Browserstack](https://www.browserstack.com/), [Cypress](https://www.cypress.io/), ...
  * Analyse statique de code : [Codeclimate](https://codeclimate.com), [Scrutinizer](https://scrutinizer-ci.com/), ...
  * Couverture de code : [Coveralls](https://coveralls.io/), la liste précédente
- * Vérification de dépendances : [Versioneye](https://www.versioneye.com/), [David](https://david-dm.org/), [Greenkeeper](https://greenkeeper.io/), ...
+ * Vérification de dépendances : [Versioneye](https://www.versioneye.com/), [David](https://david-dm.org/), [Snyk](https://snyk.io/), ...
  * Documentation : [ReadTheDocs](https://docs.readthedocs.io/en/latest/), [Apiary](https://apiary.io/), ...
  * Déploiement : AWS, Azure, Heroku, Play Store, ...
 
@@ -839,6 +849,15 @@ git rebase -i [SHA]
 ```
 
 
+# TP / Squash
+
+```bash
+git rebase -p --onto SHA^ SHA
+
+git log --abbrev-commit master..
+```
+
+
 # TP / Rebase Attention
 
 Ne jamais utiliser le `rebase` sur des commits qui ne sont pas strictement locaux.
@@ -868,17 +887,15 @@ git stash branch <branchname> <stashname>
 
 # Adapter son prompt
 
-[Ca se passe ici](http://www.git-attitude.fr/2013/05/22/prompt-git-qui-dechire/)
+A ajouter dans le `.bashrc`
 
+```
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\u@\h \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
+```
 
-
-# Bilan
-
- * Soyez fainéant
-   * Ne faites que ce qui est nécessaire
-   * Soustraitez le maximum aux machines
- * Automatisez
- * Communiquez
 
 
 # Début de projet
@@ -916,6 +933,15 @@ git stash branch <branchname> <stashname>
    * A supprimer
    * A améliorer
    * A conserver
+
+
+# Bilan
+
+ * Soyez fainéant
+   * Ne faites que ce qui est nécessaire
+   * Soustraitez le maximum aux machines
+ * Automatisez
+ * Communiquez
 
 
 
